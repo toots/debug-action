@@ -1,9 +1,4 @@
 name: Debug
 runs:
-  using: composite
-  steps:
-    - name: Debug
-      shell: bash
-      run: |
-        env
-        docker ps
+  using: 'node20'
+  main: 'index.js'
